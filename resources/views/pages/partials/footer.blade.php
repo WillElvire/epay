@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
                     <div class="footer-logo mb-30">
-                        <a href="index-2.html"><img src="/assets/images/lite-logo.png" alt=""></a>
+                        <a href="index-2.html"><img src="/assets/images/fav-orange.png" alt=""></a>
                     </div>
                       <div class="textwidget pr-60 md-pr-15"><p class="white-color">We denounce with righteous indi gnation and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
                       </div>
@@ -93,22 +93,5 @@
             </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <div class="container">                    
-            <div class="row y-middle">
-                <div class="col-lg-6 md-mb-20">
-                    <div class="copyright">
-                        <p>&copy; 2020 All Rights Reserved. Developed By <a href="http://rstheme.com/">RSTheme</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-right md-text-left">
-                    <ul class="copy-right-menu">
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </footer>

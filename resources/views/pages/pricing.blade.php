@@ -1,5 +1,7 @@
 @extends('welcome')
 
+@section('container')
+
         <div class="main-content">
             
             <div class="rs-breadcrumbs breadcrumbs-overlay">
@@ -69,4 +71,5 @@
                   </div>
                 </div>
             </div>
+@stop
             
