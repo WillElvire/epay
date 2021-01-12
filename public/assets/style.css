@@ -3315,7 +3315,7 @@ body .modal-backdrop {
   line-height: 30px;
 }
 .rs-banner.style3 {
-  background: url(assets/images/banner/home3.jpg);
+  background: url(/assets/images/banner/home3.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -3348,7 +3348,7 @@ body .modal-backdrop {
   transform: translateY(-50%);
 }
 .rs-banner.style4 {
-  background: url(assets/images/banner/home4.jpg);
+  background: url(/assets/images/banner/home4.jpg);
   background-size: cover;
   background-position: center;
   min-height: 935px;

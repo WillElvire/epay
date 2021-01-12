@@ -13,22 +13,81 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+///////////////////////////////////////////////////////////////
+
 Route::get('/', function () {
     return view('welcome');
 });
+///////////////////////////////////////////////////////////////////
 
 Route::get('/', function () {
     return view('pages/index');
 });
+///////////////////////////////////////////////////////////////////
 
 Route::get('/register',function(){
     return view('pages/register');
 });
+////////////////////////////////////////////////////////////////////
+Route::get('/register/ref={id}',function($id){
+    return view('pages/register')->withId($id);
+});
+////////////////////////////////////////////////////////////////////
 
 Route::get('/pricing',function(){
      return view('pages/pricing');
 });
 
+///////////////////////////////////////////////////////////////////
+
 Route::get('/auth',function(){
     return view('pages/auth');   
+});
+
+
+
+Route::get('/confirmation', function() {
+    
+     return view('pages/confirmation');
+});
+
+
+/////////////////////////////////////////////////////////////////////
+
+Route::group(['prefix' => 'utilisateur'], function() {
+    //
+    Route::get('/', function () {
+        return view('user/index');
+    });
+    ////////////////////////////
+    Route::get('/lock',function(){
+        return view('pages/blockus');
+    }); 
+    ///////////////////////////   
+    Route::get('/modify', function() {
+        
+         return view('user/modify');
+    });
+    ///////////////////////////
+    Route::get('/profil', function () {
+        
+        return view('user/profil');
+    });
+    //////////////////////////
+    Route::get('/transaction', function () {
+        
+        return view('user/transaction');
+    });
+    //////////////////////////
+    Route::get('/withdrawall', function() {
+        
+        return view('user/retrait');
+    });
+    /////////////////////////
+    Route::get('/inbox', function () {
+        
+        return view('user/message');
+    });
+    
+    
 });

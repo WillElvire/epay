@@ -6,7 +6,7 @@
                     <div class="footer-logo mb-30">
                         <a href="index-2.html"><img src="/assets/images/fav-orange.png" alt=""></a>
                     </div>
-                      <div class="textwidget pr-60 md-pr-15"><p class="white-color">We denounce with righteous indi gnation and dislike men who are so beguiled and demoralized by the charms of pleasure of your moment, so blinded by desire those who fail weakness.</p>
+                      <div class="textwidget pr-60 md-pr-15">
                       </div>
                       <ul class="footer_social">  
                           <li> 
@@ -59,37 +59,7 @@
                         <li><a href="#">Login/Register</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
-                    <h3 class="widget-title">Recent Posts</h3>
-                    <div class="recent-post mb-20">
-                        <div class="post-img">
-                            <img src="/assets/images/footer/1.jpg" alt="">
-                        </div>
-                        <div class="post-item">
-                            <div class="post-desc">
-                                <a href="#">University while the lovely valley team work</a>
-                            </div>
-                            <span class="post-date">
-                                <i class="fa fa-calendar"></i>
-                                September 20, 2020
-                            </span>
-                        </div>
-                    </div> 
-                    <div class="recent-post mb-20 md-pb-0">
-                        <div class="post-img">
-                            <img src="/assets/images/footer/2.jpg" alt="">
-                        </div>
-                        <div class="post-item">
-                            <div class="post-desc">
-                                <a href="#">High school program starting soon 2021</a>
-                            </div>
-                            <span class="post-date">
-                               <i class="fa fa-calendar-check-o"></i>
-                                September 14, 2020
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

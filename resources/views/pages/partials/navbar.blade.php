@@ -20,7 +20,7 @@
                         <a href="{{config('app.url')}}/register">Inscription</a>/<a href="{{config('app.url')}}/auth">Connexion</a>
                     </li>
                     <li class="btn-part">
-                        <a class="apply-btn" href="#">Table des prix</a>
+                        <a class="apply-btn" href="{{config('app.url')}}/pricing">Table des prix</a>
                     </li>
                 </ul>
             </div>

@@ -81,17 +81,7 @@
         </div>
     </div>
 </div>
-<div class="slider-content slide2">
-    <div class="container">
-        <div class="content-part">
-            <div class="sl-sub-title wow bounceInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Start to learning today</div>
-            <h1 class="sl-title wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2000ms">Explore Interests and Career With Courses</h1>
-            <div class="sl-btn wow fadeInUp" data-wow-delay="900ms" data-wow-duration="2000ms">
-                <a class="readon orange-btn main-home" href="#">Find Courses</a>
-            </div>
-        </div>
-    </div>
-</div>
+
 </div>
 
 <!-- Features Section start -->
@@ -101,7 +91,7 @@
         <div class="col-lg-4 col-md-12 md-mb-30">
             <div class="features-wrap">
                 <div class="icon-part">
-                   <img src="/assets/images/features/icon/3.png" alt="">
+                   <img src="/assets/images/features/style3/icons/3.png" alt="">
                 </div>
                 <div class="content-part">
                     <h4 class="title">
@@ -116,7 +106,7 @@
         <div class="col-lg-4 col-md-12 md-mb-30">
             <div class="features-wrap">
                 <div class="icon-part">
-                   <img src="/assets/images/features/icon/2.png" alt="">
+                   <img src="/assets/images/features/style3/icons/3.png" alt="">
                 </div>
                 <div class="content-part">
                   <h4 class="title">
@@ -131,7 +121,7 @@
         <div class="col-lg-4 col-md-12">
             <div class="features-wrap">
                 <div class="icon-part">
-                   <img src="/assets/images/features/icon/1.png" alt="">
+                   <img src="/assets/images/features/style3/icons/3.png" alt="">
                 </div>
                 <div class="content-part">
                     <h4 class="title">
@@ -164,7 +154,7 @@
     </div>
     <div class="col-lg-5">
         <div class="sec-title mb-26 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
-            <div class="sub-title primary">QUI SOMMES-NOUS ?</div>
+            <div class="sub-title dark">QUI SOMMES-NOUS ?</div>
             
             <div class="desc pr-30">
 
@@ -252,7 +242,7 @@ Ces deux modules d’investissements sont très prisés et à 100% fiables. Ce q
         <div class="offset-lg-6"></div>
         <div class="col-lg-6 pl-70 md-pl-15">
             <div class="sec-title3 mb-40">
-                <h2 class="title white-color mb-16">20% Offer Running - Join Today</h2>
+                <h2 class="title white-color mb-16">Nos offres</h2>
                 <div class="desc white-color pr-100 md-pr-0">
 
 ⛽️ Tonneau 50$ ⛽️
@@ -313,17 +303,16 @@ Rentabilité totale 12727,27 $
     <div class="card-deck mb-3 text-center">
       <div class="card mb-4 box-shadow">
         <div class="card-header readon register-btn">
-          <h4 class="my-0 font-weight-normal text-light">Free</h4>
+          <h4 class="my-0 font-weight-normal text-light">LITE</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+          <h1 class="card-title pricing-card-title">50 $ <small class="text-muted"></small></h1>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
+            <li><b>Vous recevrez 22,725 $ / semaine</li>
+            <li>Vous recevrez  90,90 $ / mois </b></li>
+            
           </ul>
-          <button type="button" class="readon register-btn">Adherer</button>
+          <a href="{{config('app.url')}}/register" class="readon register-btn"> Adherer</a>
         </div>
       </div>
       <div class="card mb-4 box-shadow">
@@ -331,14 +320,13 @@ Rentabilité totale 12727,27 $
           <h4 class="my-0 font-weight-normal ">Pro</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+          <h1 class="card-title pricing-card-title">1000 $ <small class="text-muted"></small></h1>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>20 users included</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
+            <b><li>semaines Vous recevrez 484,84 $</li>
+            <li>Rentabilité totale mensuel 1,454 $</li></b>
+            
           </ul>
-          <button type="button" class="readon register-btn">Adherer</button>
+          <a href="{{config('app.url')}}/register" class="readon register-btn"> Adherer</a>
         </div>
       </div>
       <div class="card mb-4 box-shadow">
@@ -346,14 +334,14 @@ Rentabilité totale 12727,27 $
           <h4 class="my-0 font-weight-normal text-light">Enterprise</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+          <h1 class="card-title pricing-card-title">10000 $</h1>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
+            <b> <li>Vous recevrez 1060 60 $ / semaines</li>
+            <li>Vous recevrez 4242,42 $ / 03 mois</li>
+            <li>Rentabilité totale 12727,27 $</li> </b>
+            
           </ul>
-          <button type="button" class="readon register-btn"> Adherer</button>
+          <a href="{{config('app.url')}}/register" class="readon register-btn"> Adherer</a>
         </div>
       </div>
     </div>
@@ -432,127 +420,10 @@ Rentabilité totale 12727,27 $
 
 
 
-<!-- Testimonial Section Start -->
-<div class="rs-testimonial main-home pt-100 pb-100 md-pt-70 md-pb-70">
-<div class="container">
-<div class="sec-title3 mb-50 md-mb-30 text-center">
-    <div class="sub-title primary">Testimonial</div>
-    <h2 class="title white-color">What Students Saying</h2>
-</div>
-<div class="rs-carousel owl-carousel" 
-    data-loop="true" 
-    data-items="2" 
-    data-margin="30" 
-    data-autoplay="true" 
-    data-hoverpause="true" 
-    data-autoplay-timeout="5000" 
-    data-smart-speed="800" 
-    data-dots="true" 
-    data-nav="false" 
-    data-nav-speed="false" 
 
-    data-md-device="2" 
-    data-md-device-nav="false" 
-    data-md-device-dots="true" 
-    data-center-mode="false"
-
-    data-ipad-device2="1" 
-    data-ipad-device-nav2="false" 
-    data-ipad-device-dots2="true"
-
-    data-ipad-device="2" 
-    data-ipad-device-nav="false" 
-    data-ipad-device-dots="true" 
-
-    data-mobile-device="1" 
-    data-mobile-device-nav="false" 
-    data-mobile-device-dots="false">
-    <div class="testi-item">
-        <div class="author-desc">                                
-            <div class="desc"><img class="quote" src="/assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-            <div class="author-img">
-                <img src="/assets/images/testimonial/style5/1.png" alt="">
-            </div>
-        </div>
-        <div class="author-part">
-            <a class="name" href="#">Mahadi Monsura</a>
-            <span class="designation">Student</span>
-        </div>
-    </div>
-    <div class="testi-item">
-        <div class="author-desc">
-            <div class="desc"><img class="quote" src="/assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-            <div class="author-img">
-                <img src="/assets/images/testimonial/style5/2.png" alt="">
-            </div>
-        </div>
-        <div class="author-part">
-            <a class="name" href="#">Alex Fenando</a>
-            <span class="designation">English Teacher</span>
-        </div>
-    </div>
-    <div class="testi-item">
-        <div class="author-desc">
-            <div class="desc"><img class="quote" src="/assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-            <div class="author-img">
-                <img src="/assets/images/testimonial/style5/3.png" alt="">
-            </div>
-        </div>
-        <div class="author-part">
-            <a class="name" href="#">Losis Dcosta</a>
-            <span class="designation">Math Teacher</span>
-        </div>
-    </div>   
-    <div class="testi-item">
-        <div class="author-desc">                                
-            <div class="desc"><img class="quote" src="/assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-            <div class="author-img">
-                <img src="/assets/images/testimonial/style5/1.png" alt="">
-            </div>
-        </div>
-        <div class="author-part">
-            <a class="name" href="#">Mahadi Monsura</a>
-            <span class="designation">Student</span>
-        </div>
-    </div>
-    <div class="testi-item">
-        <div class="author-desc">
-            <div class="desc"><img class="quote" src="/assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-            <div class="author-img">
-                <img src="/assets/images/testimonial/style5/2.png" alt="">
-            </div>
-        </div>
-        <div class="author-part">
-            <a class="name" href="#">Alex Fenando</a>
-            <span class="designation">English Teacher</span>
-        </div>
-    </div>
-    <div class="testi-item">
-        <div class="author-desc">
-            <div class="desc"><img class="quote" src="/assets/images/testimonial/main-home/test-2.png" alt="">Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.</div>
-            <div class="author-img">
-                <img src="/assets/images/testimonial/style5/3.png" alt="">
-            </div>
-        </div>
-        <div class="author-part">
-            <a class="name" href="#">Losis Dcosta</a>
-            <span class="designation">Math Teacher</span>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-<!-- Testimonial Section End -->
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <!-- Newsletter section start -->
-<div class="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-70">
+<div class="rs-newsletter style1  pt-70 orange-color mb--90 sm-mb-0 sm-pb-70">
 <div class="container">
 <div class="newsletter-wrap">
     <div class="row y-middle">
