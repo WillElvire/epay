@@ -32,3 +32,9 @@ Route::get('/pricing',function(){
 Route::get('/auth',function(){
     return view('pages/auth');   
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
