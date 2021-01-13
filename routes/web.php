@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,10 @@ Route::get('/register',function(){
 Route::get('/register/ref={id}',function($id){
     return view('pages/register')->withId($id);
 });
+
+
+
+Route::get('/confirmation/{token}',[userController::class,'confirmUserAccount'])->name('confirm.user.account');
 ////////////////////////////////////////////////////////////////////
 
 Route::get('/pricing',function(){
@@ -44,7 +49,11 @@ Route::get('/auth',function(){
     return view('pages/auth');   
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
+require __DIR__.'/auth.php';
 
 Route::get('/confirmation', function() {
     
@@ -52,7 +61,6 @@ Route::get('/confirmation', function() {
 });
 
 
-/////////////////////////////////////////////////////////////////////
 
 Route::group(['prefix' => 'utilisateur'], function() {
     //

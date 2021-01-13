@@ -12,7 +12,7 @@
                     <h1 class="page-title">TABLE DES PRIX</h1>
                     <ul>
                         <li>
-                            <a class="active" href="{{config('app.urk">Accueil</a>
+                            <a class="active" href="{{config('app.urk')}}">Accueil</a>
                         </li>
                         <li>Pricing</li>
                     </ul>

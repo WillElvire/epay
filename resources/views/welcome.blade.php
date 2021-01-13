@@ -61,6 +61,7 @@
         <!-- Search Modal End -->
 
         <!-- modernizr js -->
+          @livewireScripts
         <script src="/assets/js/modernizr-2.8.3.min.js"></script>
         <!-- jquery latest version -->
         <script src="/assets/js/jquery.min.js"></script>
@@ -104,6 +105,5 @@
       
     </body>
 
-<!-- Mirrored from keenitsolutions.com/products/html/educavo/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Jan 2021 18:51:32 GMT -->
 </html>
 

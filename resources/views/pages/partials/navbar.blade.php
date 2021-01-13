@@ -17,7 +17,7 @@
                 <ul class="topbar-right">
                     <li class="login-register">
                         <i class="fa fa-sign-in"></i>
-                        <a href="{{config('app.url')}}/register">Inscription</a>/<a href="{{config('app.url')}}/auth">Connexion</a>
+                        <a href="/register">Inscription</a>/<a href="/auth">Connexion</a>
                     </li>
                     <li class="btn-part">
                         <a class="apply-btn" href="{{config('app.url')}}/pricing">Table des prix</a>
@@ -51,27 +51,27 @@
                       <nav class="rs-menu">
                          <ul class="nav-menu">
                           <li class="menu-item">
-                              <a href="{{config('app.url')}}/">Accueil</a>
+                              <a href="/">Accueil</a>
                           </li>
 
 
                              <li class="menu-item-has-children">
-                                 <a href="{{config('app.url')}}/pricing">Table des prix</a>
+                                 <a href="/pricing">Table des prix</a>
                                  
                              </li>
 
                              <li class="menu-item-has-children">
-                                 <a href="{{config('app.url')}}/auth">Back office</a>
+                                 <a href="/auth">Back office</a>
                                  
                              </li>
 
                              <li class="menu-item-has-children">
-                                 <a href="{{config('app.url')}}/register">Inscription</a>
+                                 <a href="/register">Inscription</a>
                                  
                              </li>
 
                              <li class="menu-item-has-children">
-                                 <a href="{{config('app.url')}}/contact">Contact</a>
+                                 <a href="/contact">Contact</a>
                                  
                              </li>
                          </ul> <!-- //.nav-menu -->
