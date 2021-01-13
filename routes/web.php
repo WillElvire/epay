@@ -88,6 +88,12 @@ Route::group(['prefix' => 'utilisateur'], function() {
         
         return view('user/message');
     });
+    //////////////////////////
+    
+    Route::get('/confirmation', function() {
+        
+        return view('user/confirmation');
+    });
     
     
 });
