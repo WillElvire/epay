@@ -25,6 +25,8 @@ class User extends Authenticatable
         'user_code',
         'country',
         'email',
+        'validation',
+        'token',
         'password',
     ];
 

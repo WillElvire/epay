@@ -3,12 +3,15 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Mail\confirmAccount;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 
 class RegisteredUserController extends Controller
 {
@@ -43,7 +46,7 @@ class RegisteredUserController extends Controller
         ]);
 
 
-        Auth::login($user = User::create([
+        $user = User::create([
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
             'country' => $request->country,
@@ -52,11 +55,13 @@ class RegisteredUserController extends Controller
             'phone' => $request->phone,
             'user_code' => $request->user_code,
             'email' => $request->email,
+            'token' => Str::random(60),
             'password' => Hash::make($request->password),
-        ]));
-
+        ]);
         event(new Registered($user));
-
-        return redirect('/');
+        session()->flash('good','compte créer, veuillez confirmer depuis votre email le compte');
+        $mail = Mail::to($request->email)->send(new confirmAccount($user));
+        
+        return redirect('/auth');
     }
 }

@@ -8,7 +8,12 @@
             <div class="main-part">                           
                 <div class="method-account">
                     
-                    <h2 class="login">Se connecter</h2>
+                    <h2 class="login">Se connecter</h2>*
+                    @if(session()->has('good'))
+                    <div class="alert alert-success text-center">
+                        {{session()->get('success')}}
+                    </div>
+                    @endif
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <input type="email mb-30" name="email" placeholder="Votre Email" required="">
