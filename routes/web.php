@@ -105,3 +105,58 @@ Route::group(['prefix' => 'utilisateur'], function() {
     
     
 });
+
+///////////////////////////// ADMINISTRATEUR //////////////////
+
+Route::group(['prefix' => 'admin'], function () {
+
+    
+    Route::get('/home', function() {
+        
+         return view('administrator/index');
+    });
+
+
+    Route::get('/inscription', function() {
+        
+        return view('administrator/inscrit');
+   });
+
+
+   Route::get('/demande', function() {
+        
+    return view('administrator/demande');
+});
+
+
+
+   Route::get('/profil/{id}', function($id) {
+        
+    return view('administrator/profil');
+   });
+
+   Route::get('/comptablitite', function() {
+        
+    return view('administrator/profil');
+   });
+
+
+   Route::get('/withdrawall', function() {
+        
+    return view('administrator/retrait');
+   });
+
+
+   Route::get('/search', function() {
+        
+    return view('administrator/search');
+   });
+
+
+   Route::get('/recherche', function() {
+        
+    return view('administrator/retrait');
+   });
+
+    
+});
