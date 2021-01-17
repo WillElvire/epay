@@ -3716,13 +3716,13 @@ body .modal-backdrop {
   margin-left: -5px;
 }
 .rs-slider.style1 .slider-content.slide1 {
-  background: url(/assets/images/slider/h2-1.jpg);
+  background: url(/assets/images/new/banner.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.style1 .slider-content.slide2 {
-  background: url(/assets/images/slider/h2-2.jpg);
+  background: url(/assets/images/new/banner2.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3871,13 +3871,13 @@ body .modal-backdrop {
   margin-bottom: 65px;
 }
 .rs-slider.main-home .slider-content.slide1 {
-  background: url(/assets/images/slider/main-home/1.jpg);
+  background: url(/assets/images/new/meeting.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.main-home .slider-content.slide2 {
-  background: url(/assets/images/slider/main-home/2.jpg);
+  background: url(/assets/images/new/meet.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
