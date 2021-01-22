@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
+use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -28,11 +29,17 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request)
     {
-        $request->authenticate();
 
-        $request->session()->regenerate();
-
-        return redirect('/');
+         $user = User::firstWhere('email',$request->email);
+         if ($user->role_id == 1) {
+             $req  = $request->authenticate();
+            $r = $request->session()->regenerate();
+            return redirect('/administrateur');
+         }
+         
+        $req  = $request->authenticate();
+        $r = $request->session()->regenerate();
+        return redirect('/utilisateur');
     }
 
     /**
@@ -44,11 +51,8 @@ class AuthenticatedSessionController extends Controller
     public function destroy(Request $request)
     {
         Auth::guard('web')->logout();
-
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
-
-        return redirect('/');
+        return view('pages.auth');
     }
 }

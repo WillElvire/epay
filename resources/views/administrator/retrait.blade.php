@@ -5,6 +5,8 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Demande de retrait</h6>
+
+       
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -12,7 +14,7 @@
                 <thead>
                     <tr>
                         <th>Numéro de compte</th>
-                        <th>Nom</th>
+                        <th>Nom & Prénoms</th>
                        
                       
                         <th>Montant</th>
@@ -21,10 +23,12 @@
                 </thead>
                 
                 <tbody>
+
+                  @foreach($retraits as $retrait)
                     <tr>
-                        <td>X50020</td>
-                        <td><a href="{{config('app.url')}}/admin/profil/5">Tiger Nixon</a></td>
-                        <td>50 $</td>
+                        <td>{{$retrait->user->user_code}}</td>
+                        <td><a href="/admin/profil/5">{{$retrait->user->firstname}} {{$retrait->user->lastname}}</a></td>
+                        <td>{{$retrait->money}} $</td>
                         <td>
                             <div class="btn btn-group">
                                 <a class="btn btn-success"  data-toggle="modal" data-target="#exampleModal">
@@ -37,6 +41,7 @@
                             </div>
                         </td>
                     </tr>
+                    @endforeach
 
                    
 

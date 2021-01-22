@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="/user/assets/css/demo_1/style.css">
     <!-- End Layout styles -->
     <link rel="shortcut icon" href="/user/assets/images/favicon.ico" />
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    @livewireStyles
+
   </head>
   <body>
     <div class="container-scroller">
@@ -132,13 +135,13 @@
             <hr>
            
             <li class="nav-item">
-              <a class="nav-link" href="{{config('app.url')}}/utilisateur/">
+              <a class="nav-link" href="/utilisateur/">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{config('app.url')}}/utilisateur/transaction" aria-expanded="false" aria-controls="ui-basic">
+              <a class="nav-link"  href="transaction" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">Transaction</span>
               
@@ -146,21 +149,16 @@
               
             </li>
             
-           
-            <li class="nav-item">
-              <a class="nav-link" href="{{config('app.url')}}/utilisateur/withdrawall">
+             @if(auth()->user()->verification == 1)
+              <li class="nav-item">
+              <a class="nav-link" href="/utilisateur/withdrawall">
                 <i class="menu-icon typcn typcn-bell"></i>
                 <span class="menu-title">Rétrait</span>
               </a>
             </li>
+           
             <li class="nav-item">
-              <a class="nav-link" href="{{config('app.url')}}/utilisateur/modify">
-                <i class="menu-icon typcn typcn-user-outline"></i>
-                <span class="menu-title">Modification</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  href="{{config('app.url')}}/utilisateur/profil" aria-expanded="false" aria-controls="auth">
+              <a class="nav-link"  href="/utilisateur/profil" aria-expanded="false" aria-controls="auth">
                 <i class="menu-icon typcn typcn-document-add"></i>
                 <span class="menu-title">Profil</span>
                 
@@ -171,7 +169,7 @@
            
 
               <li class="nav-item">
-                <a class="nav-link"  href="{{config('app.url')}}/utilisateur/inbox" aria-expanded="false" aria-controls="auth">
+                <a class="nav-link"  href="/utilisateur/inbox" aria-expanded="false" aria-controls="auth">
                   <i class="menu-icon typcn typcn-document-add"></i>
                   <span class="menu-title">Message</span>
                   
@@ -179,8 +177,9 @@
                 
               </li>
 
+              @endif
               <li class="nav-item">
-                <a class="nav-link"  href="{{config('app.url')}}/utilisateur/profil" aria-expanded="false" aria-controls="auth">
+                <a class="nav-link"  href="/utilisateur/profil" aria-expanded="false" aria-controls="auth">
                   <i class="menu-icon typcn typcn-document-add"></i>
                   <span class="menu-title">Voir le site</span>
                   
@@ -188,19 +187,18 @@
                 
               </li>
               <li class="nav-item">
-                <a class="nav-link"  href="{{config('app.url')}}/utilisateur/profil" aria-expanded="false" aria-controls="auth">
-                  <i class="menu-icon typcn typcn-document-add"></i>
-                  <span class="menu-title">Deconnection</span>
-                  
-                </a>
+                 <a class="nav-link"  href="{{ route('user.logout') }}" aria-expanded="false" aria-controls="auth">
+                <i class="menu-icon typcn typcn-document-add"></i>
+                <span class="menu-title">Deconnection</span>
+                
+              </a>
                 
               </li>
           </ul>
         </nav>
         <div class="main-panel">
             <div class="content-wrapper">
-        @yield('container')
-
+              @yield('container')
             </div>
         </div>
        
@@ -211,6 +209,8 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
+    @livewireScripts
+
     <script src="/user/assets/vendors/js/vendor.bundle.base.js"></script>
     <script src="/user/assets/vendors/js/vendor.bundle.addons.js"></script>
     <!-- endinject -->

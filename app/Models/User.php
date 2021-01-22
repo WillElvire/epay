@@ -49,4 +49,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+
+
+    public function retrait()
+    {
+        return $this->hasMAny('App\Models\Retrait');
+    }
+
+
+    public function money()
+    {
+        return $this->hasMany('App\Models\Trasaction');
+    }
 }
