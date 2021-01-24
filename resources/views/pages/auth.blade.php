@@ -17,7 +17,11 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <input type="email mb-30" name="email" placeholder="Votre Email" required="">
-                        <input type="password" name="password" placeholder="Votre mot de passe" required="">
+
+                        
+
+                        <input type="<i class='ri-lock-password-fill'></i>" name="password" placeholder="Votre mot de passe" required="">
+
                         <button type="submit" class="readon submit-btn">Se connecter</button>
                         <div class="last-password">
                             <p>Vous n'avez pas de compte? <a href="{{config('app.url')}}/register">Creer son compte</a></p>

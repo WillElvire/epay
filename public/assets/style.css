@@ -3722,7 +3722,7 @@ body .modal-backdrop {
   background-repeat: no-repeat;
 }
 .rs-slider.style1 .slider-content.slide2 {
-  background: url(/assets/images/new/banner2.jpeg);
+  background: url(/assets/images/slider/h2-2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3871,7 +3871,7 @@ body .modal-backdrop {
   margin-bottom: 65px;
 }
 .rs-slider.main-home .slider-content.slide1 {
-  background: url(/assets/images/new/meeting.jpg);
+  background: url(/assets/images/new/first.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9988,7 +9988,7 @@ body .modal-backdrop {
   transform: translate(-50%, -50%);
 }
 .rs-cta.style1 {
-  background: url(/assets/images/bg/pattern1.png);
+  background: url(/assets/images/new/first.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -10053,29 +10053,29 @@ body .modal-backdrop {
   z-index: -1;
 }
 .rs-cta.style2 .partition-bg-wrap:before {
-  background: url(/assets/images/cta/style2/left-bg.jpg);
+  background: url(/assets/images/new/meeting.jpg);
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .rs-cta.style2 .partition-bg-wrap:after {
-  background: url(/assets/images/cta/style2/right-bg.jpg);
+  background: url(/assets/images/new/meeting.jpg);
   right: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
 }
 .rs-cta.style2 .partition-bg-wrap.inner-page:before {
-  background: url(/assets/images/cta/style2/left-bg2.png);
+  background: url(/assets/images/new/meeting.png);
   background-size: cover;
 }
 .rs-cta.style2 .partition-bg-wrap.inner-page:after {
-  background: url(/assets/images/cta/style2/right-bg2.png);
+  background: url(/assets/images/new/meeting.png);
   background-size: cover;
 }
 .rs-cta.style3 {
-  background: url(/assets/images/bg/pattern1.png);
+  background: url(/assets/images/new/meeting.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -10141,7 +10141,7 @@ body .modal-backdrop {
   z-index: -1;
 }
 .rs-cta.main-home .partition-bg-wrap:after {
-  background: url(/assets/images/cta/home1.jpg);
+  background: url(/assets/images/new/meeting.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

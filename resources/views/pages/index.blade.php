@@ -148,8 +148,8 @@
 <div class="row align-items-center">
     <div class="col-lg-7 pl-60 order-last md-pl-15 md-mb-60">
         <div class="img-part js-tilt">
-            <img class="" src="assets/images/about/about2orange.png" alt="">
-            <img class="shape top-center animated rotate infinite" src="assets/images/about/image-center-circle.png" alt="Cirle Shape Img">
+            <img class="" src="assets/images/new/banner2.jpeg" alt="">
+           
         </div>
     </div>
     <div class="col-lg-5">
@@ -164,17 +164,16 @@ L’immobilier et le pétrole, sont des investissements rentables et facile à c
 
 Epay est une société Israélienne ( dont le siège principal est en Israël ) qui avec sa renommée, vous rassure et vous permet d’injecter votre investissement en toute sécurité dans la représentation du pays de votre sous région. 
 
-Notre objectif est de permettre à toutes les classes sociales d’investir un montant selon le choix personnel en vue d’évoluer de façon simple, éduquée et régulée avec le partenariat que vous signez avec Epay 
+<br>
 
-L’immobilier et le pétrole, sont des atouts d’avenir qui ne peuvent être infaillibles puisque vous avez l’aide une grande société experte comme Epay. 
 
-Pourquoi investir dans l’immobilier et le pétrole, 
-Ces deux modules d’investissements sont très prisés et à 100% fiables. Ce qui permet de spéculer sur le marché financier avec des prix très intéressant et fluide, la plus facile des manières de cogiter sur les opportunités de rentabilité de l’investissement en Immobilier et pétrole, c’est en ligne.
+
 
             </div>
         </div>
         <div class="btn-part wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
             <a class="readon register-btn col-md-6" href="#">Inscription</a>
+            <a href="#" class="btn btn-primary btn-lg col-md-4" data-toggle="modal" data-target="#exampleModalLong">Lire plus</a>
         </div>
     </div>
 </div>
@@ -245,45 +244,32 @@ Ces deux modules d’investissements sont très prisés et à 100% fiables. Ce q
                 <h2 class="title white-color mb-16">Nos offres</h2>
                 <div class="desc white-color pr-100 md-pr-0">
 
-⛽️ Tonneau 50$ ⛽️
-Vous recevrez 22,725 $ / semaine
-Rendement total 90,90$
-<br>
-⛽️Tonneau 100 $⛽️
-Vous recevrez 45,45 $ / semaine
-Vous recevrez 181,81 $ / mois
-<br>
-⛽️Tonneau 150 $⛽️
-Vous recevrez 68,18 $ / semaine
-Vous recevrez 272,72 $ / mois
-<br>
-⛽️Tonneau 200 $⛽️
-Vous recevrez 90,90 $ /semaine
-Vous recevrez 363,61 $ / mois
-<br>
-⛽️Tonneau 370 $⛽️
-Vous recevrez 181,81 / semaine
-Vous recevrez 727,27 / mois
-<br>
-⛽️Tonneau 1000 $⛽️
-Vous recevrez 121,21 $ / 12 semaines 
-Vous recevrez 484,84 $ / mois
-Rentabilité totale1,454 $ 
-<br>
-⛽️Tonneau 2000 $⛽️
-Vous recevrez 272,72 $ / 12 semaines
-Vous recevrez 1090,90 $ / 03 mois
-Rentabilité totale 3272,72 $
-<br>
-⛽️Tonneau 4000 $⛽️
-Vous recevrez 454,54 $ / semaines
-Vous recevrez 1818,18 $ / 03 mois
-Rentabilité totale 5454,54 $
-<br>
-⛽️Tonneau 10000 $⛽️
-Vous recevrez 1060 60 $ / semaines
-Vous recevrez 4242,42 $ / 03 mois
-Rentabilité totale 12727,27 $
+                    ⛽️ Tonneau 50$ ⛽️
+                    Vous recevrez 91 $ fin de semaine <br>
+                    
+                    ⛽️Tonneau 100 $⛽️
+                    Vous recevrez 181 $ fin de semaine <br>
+                    
+                    ⛽️Tonneau 150 $⛽️
+                    Vous recevrez 275 $ fin de semaine <br>
+                    
+                    ⛽️Tonneau 200 $⛽️
+                    Vous recevrez 362 $ fin de semaine <br>
+                    
+                    ⛽️Tonneau 370 $⛽️
+                    Vous recevrez 650 $ fin de semaine <br>
+                    
+                    ⛽️Tonneau 1000 $⛽️
+                    Vous recevrez 1540 $ fin de semaine  <br>
+                    
+                    🏘⛽️Tonneau 2000 $⛽️🏘
+                    Vous recevrez 3270 $ fin des 02 semaines <br>
+                    
+                    🏘⛽️Tonneau 4000 $🏘⛽️
+                    Vous recevrez 5851 $ fin des 02 semaines <br>
+                    
+                    🏘⛽️Tonneau 10000 $🏘⛽️
+                    Vous recevrez 13501 $ fin des 02 semaine <br>
 </div>
 </div>
             <div class="btn-part">
@@ -297,54 +283,54 @@ Rentabilité totale 12727,27 $
 <!-- CTA Section End --> 
 
 <div class="container pt-70">
-    <hr>
+  
     <h2 class="row justify-content-center">TABLE DES PRIX</h2>
                 
     <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 box-shadow">
-        <div class="card-header readon register-btn">
-          <h4 class="my-0 font-weight-normal text-light">LITE</h4>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header readon register-btn">
+            <h4 class="my-0 font-weight-normal text-light">Particulier</h4>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title">50$ - 370 $</h2>
+            <ul class="list-unstyled mt-3 mb-4">
+             <br>
+             <br> 
+              
+            </ul>
+            <a type="button" class="readon register-btn" href="{{config('app.url')}}/register">Adherer</a>
+          </div>
         </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">50 $ <small class="text-muted"></small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li><b>Vous recevrez 22,725 $ / semaine</li>
-            <li>Vous recevrez  90,90 $ / mois </b></li>
-            
-          </ul>
-          <a href="{{config('app.url')}}/register" class="readon register-btn"> Adherer</a>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal ">Investisseur</h4>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title">1000 $ - 4000 $</h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <br>
+              <br> 
+            </ul>
+            <a type="button" class="readon register-btn" href="{{config('app.url')}}/register">Adherer</a>
+          </div>
         </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal ">Pro</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">1000 $ <small class="text-muted"></small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <b><li>semaines Vous recevrez 484,84 $</li>
-            <li>Rentabilité totale mensuel 1,454 $</li></b>
-            
-          </ul>
-          <a href="{{config('app.url')}}/register" class="readon register-btn"> Adherer</a>
-        </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header readon register-btn">
-          <h4 class="my-0 font-weight-normal text-light">Enterprise</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">10000 $</h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <b> <li>Vous recevrez 1060 60 $ / semaines</li>
-            <li>Vous recevrez 4242,42 $ / 03 mois</li>
-            <li>Rentabilité totale 12727,27 $</li> </b>
-            
-          </ul>
-          <a href="{{config('app.url')}}/register" class="readon register-btn"> Adherer</a>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header readon register-btn">
+            <h4 class="my-0 font-weight-normal text-light">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title">10000$ </h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <br>
+             <br> 
+            </ul>
+            <a class="readon register-btn" href="{{config('app.url')}}/register"> Adherer</a>
+          </div>
         </div>
       </div>
-    </div>
+     
+      
+  </div>
 </div>
 
 <!-- Faq Section Start -->
@@ -407,7 +393,7 @@ Rentabilité totale 12727,27 $
     </div>
     <div class="col-lg-6 padding-0">
         <div class="img-part media-icon orange-color">
-            <a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI">
+            <a class="popup-videos" href="#">
                 <i class="fa fa-play"></i>
             </a>
         </div>
@@ -448,5 +434,39 @@ Rentabilité totale 12727,27 $
 </div>
 </div>
 <!-- Newsletter section end -->
+
+
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <h4 >Qui sommes-nous ?</h4>
+         Epay   est une  plateforme est spécialisée dans l’investissement immobilier à long terme et pétrolier à court terme qui offre à nos clients une satisfaction absolue. 
+
+L’immobilier et le pétrole, sont des investissements rentables et facile à comprendre, puisque vous savez où est injecté vos fonds. Il vous permet d’agioter sur le prix du baril de pétrole et sur les offres immobilières. 
+
+Epay est une société Israélienne ( dont le siège principal est en Israël ) qui avec sa renommée, vous rassure et vous permet d’injecter votre investissement en toute sécurité dans la représentation du pays de votre sous région. 
+
+<hr>
+<h4>Notre vision</h4>
+
+            Notre objectif est de permettre à toutes les classes sociales d’investir un montant selon le choix personnel en vue d’évoluer de façon simple, éduquée et régulée avec le partenariat que vous signez avec Epay 
+
+            L’immobilier et le pétrole, sont des atouts d’avenir qui ne peuvent être infaillibles puisque vous avez l’aide une grande société experte comme Epay. 
+            
+            Pourquoi investir dans l’immobilier et le pétrole, 
+            Ces deux modules d’investissements sont très prisés et à 100% fiables. Ce qui permet de spéculer sur le marché financier avec des prix très intéressant et fluide, la plus facile des manières de cogiter sur les opportunités de rentabilité de l’investissement en Immobilier et pétrole, c’est en ligne.
+        </div>
+       
+      </div>
+    </div>
+  </div>
 
 @stop

@@ -58,10 +58,7 @@
                 </div>
             </div>
         </div>
-        <!-- Search Modal End -->
 
-        <!-- modernizr js -->
-          @livewireScripts
         <script src="/assets/js/modernizr-2.8.3.min.js"></script>
         <!-- jquery latest version -->
         <script src="/assets/js/jquery.min.js"></script>
@@ -101,7 +98,10 @@
       
  
     
-        <script src="/assets/js/tilt.jquery.min.js"></script>      
+        <script src="/assets/js/tilt.jquery.min.js"></script>   
+      
+          @livewireScripts
+       
       
     </body>
 

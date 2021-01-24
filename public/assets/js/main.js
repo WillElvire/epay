@@ -368,10 +368,10 @@
         $('.cat-menu-inner').slideToggle();
     })
 
-    /*var tilt = $('.js-tilt');
+    var tilt = $('.js-tilt');
     if(tilt.length) {
         const tilt = $('.js-tilt').tilt();
-    } */
+    }
     
 
 })(jQuery);

@@ -322,16 +322,6 @@
 @enderror
 
 </div>
-
-                        @if(isset($id))
-                        <div class="form-group col-lg-12 mb-25">
-                            <label><b>Identifiant du Parrain</b></label>
-                            <select class="form-control form-lg">
-                                <option>{{$id}}</option>
-                            </select>
-                        </div>
-                        @endif
-
                         
                         <!-- Form Group -->
                      
