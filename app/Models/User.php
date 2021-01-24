@@ -23,6 +23,7 @@ class User extends Authenticatable
         'profit_avatar',
         'sexe',
         'user_code',
+        'role_id',
         'parrain_code',
         'country',
         'email',
