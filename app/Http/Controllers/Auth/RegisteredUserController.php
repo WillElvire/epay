@@ -53,8 +53,9 @@ class RegisteredUserController extends Controller
             'country' => $request->country,
             'sexe' => $request->sexe,
             'phone' => $request->phone,
-            'user_code' => $request->user_code,
+            'user_code' => 1234,
             'parrain_code' => $request->firstname.Str::random(5),
+            
             'email' => $request->email,
             'token' => Str::random(60),
             'password' => Hash::make($request->password),

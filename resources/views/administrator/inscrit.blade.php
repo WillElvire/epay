@@ -4,6 +4,11 @@
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Liste de tout les inscrits</h6>
+        @if(session()->has('success'))
+            <div class="alert alert-success text-center">
+                {{session()->get('success')}}
+            </div>
+        @endif
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -21,91 +26,38 @@
                 </thead>
                 
                 <tbody>
-                    <tr>
-                        <td>X50020</td>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>
-                            <div class="btn btn-group">
-                                <a class="btn btn-primary" href="{{config('app.url')}}/admin/profil/2">
-                                    profil
-                                 </a>
-                                <a class="btn btn-danger">
-                                   x
-                                </a>
-                                
-                            </div>
-                        </td>
-                    </tr>
 
+                    @foreach($users as $user)
                     <tr>
                         <td>X50020</td>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
+                        <td>{{$user->firstname}}</td>
+                        <td>{{$user->lastname}}</td>
+                        <td>{{$user->email}}</td>
+                        <td>0</td>
+                        <td>{{$user->created_at->diffForHumans()}}</td>
                         <td>
                             <div class="btn btn-group">
-                                <a class="btn btn-primary" href="{{config('app.url')}}/admin/profil/2">
+                                <a class="btn btn-primary" href="{{ route('admin.user',$user->user_code) }}">
                                     profil
                                  </a>
-                                <a class="btn btn-danger">
+                                <a class="btn btn-danger" href="{{ route('admin.delete.user',$user->user_code) }}">
                                    x
                                 </a>
                                 
                             </div>
                         </td>
                     </tr>
+                    @endforeach
 
-                    <tr>
-                        <td>X50020</td>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>
-                            <div class="btn btn-group">
-                                <a class="btn btn-primary" href="{{config('app.url')}}/admin/profil/2">
-                                    profil
-                                 </a>
-                                <a class="btn btn-danger">
-                                   x
-                                </a>
-                                
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>X50020</td>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>
-                            <div class="btn btn-group">
-                                <a class="btn btn-primary" href="{{config('app.url')}}/admin/profil/2">
-                                    profil
-                                 </a>
-                                <a class="btn btn-danger">
-                                   x
-                                </a>
-                                
-                            </div>
-                        </td>
-                    </tr>
                     
                     
                 
                     
                     
                 </tbody>
+                <div class="container text-center">
+                    {{$users->links()}}
+                </div>
             </table>
         </div>
     </div>

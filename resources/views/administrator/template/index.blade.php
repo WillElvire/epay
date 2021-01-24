@@ -20,6 +20,8 @@
 
     <!-- Custom styles for this template-->
     <link href="/admin/css/sb-admin-2.min.css" rel="stylesheet">
+    @livewireStyles
+
 
 </head>
 
@@ -42,7 +44,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item ">
-                <a class="nav-link" href="{{config('app.url')}}/admin/home">
+                <a class="nav-link" href="/home">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -56,47 +58,48 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="{{config('app.url')}}/admin/inscription">
+                <a class="nav-link" href="{{ route('admin.register') }}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Les inscrits</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{config('app.url')}}/admin/demande">
+                <a class="nav-link" href="{{ route('admin.money') }}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Les demandes</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{config('app.url')}}/admin/comptabilite">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                <a class="nav-link" href="#"                    <i class="fas fa-fw fa-chart-area"></i>
                     <span>La comptabilité</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{config('app.url')}}/admin/withdrawall">
+                <a class="nav-link" href="{{ route('admin.retrait') }}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Demande de retrait</span></a>
             </li>
 
 
             <li class="nav-item">
-                <a class="nav-link" href="{{config('app.url')}}/admin/search">
+                <a class="nav-link" href="{{ route('admin.search') }}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Rechercher un client</span></a>
             </li>
 
 
             <li class="nav-item">
-                <a class="nav-link" href="{{config('app.url')}}">
+                <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Voir le site</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Se deconnecter</span></a>
+                 <a class="nav-link"  href="{{ route('user.logout') }}" aria-expanded="false" aria-controls="auth">
+                <i class="menu-icon typcn typcn-document-add"></i>
+                <span class="menu-title">Deconnection</span>
+                
+              </a>
             </li>
 
          
@@ -378,6 +381,7 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
+    @livewireScripts
     <script src="/admin/vendor/jquery/jquery.min.js"></script>
     <script src="/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

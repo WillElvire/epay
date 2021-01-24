@@ -21,10 +21,16 @@ class CreateUsersTable extends Migration
             $table->string('sexe');
             $table->string('profit_avatar')->default('null');
             $table->string('user_code');
+            $table->string('parrain_code')->nullable();
             $table->string('country');
+            $table->boolean('verification')->default(0);
+            $table->boolean('validation')->default(0);
+            $table->string('role_id')->default('1');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->boolean('status')->default(0);
+            $table->string('token');
             $table->rememberToken();
             $table->timestamps();
         });

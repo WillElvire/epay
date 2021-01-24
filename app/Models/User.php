@@ -21,6 +21,7 @@ class User extends Authenticatable
         'lastname',
         'phone',
         'profit_avatar',
+         'role_id',
         'sexe',
         'user_code',
         'parrain_code',
@@ -29,6 +30,7 @@ class User extends Authenticatable
         'validation',
         'token',
         'password',
+        'status'
     ];
 
     /**
@@ -49,4 +51,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+
+
+    public function retrait()
+    {
+        return $this->hasMAny('App\Models\Retrait');
+    }
+
+
+    public function money()
+    {
+        return $this->hasMany('App\Models\Trasaction');
+    }
 }

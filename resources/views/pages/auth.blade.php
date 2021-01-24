@@ -9,6 +9,11 @@
                 <div class="method-account">
                     
                     <h2 class="login">Se connecter</h2>
+                     @if(session()->has('success'))
+                    <div class="alert alert-success text-center">
+                        {{session()->get('success')}}
+                        </div>
+                    @endif
                     @if(session()->has('good'))
                     <div class="alert alert-success text-center">
                         {{session()->get('good')}}
