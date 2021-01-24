@@ -64,7 +64,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('admin.money') }}">
+                <a class="nav-link" href="{{ route('admin.demande') }}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Les demandes</span></a>
             </li>
