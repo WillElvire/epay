@@ -24,6 +24,7 @@ class User extends Authenticatable
          'role_id',
         'sexe',
         'user_code',
+        'role_id',
         'parrain_code',
         'country',
         'email',

@@ -38,7 +38,7 @@ class RegisteredUserController extends Controller
         $request->validate([
             'firstname' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
-            'country' => 'required|string|max:255',
+            'country' => 'required|string',
             'sexe' => 'required|string',
             'phone' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -53,11 +53,16 @@ class RegisteredUserController extends Controller
             'country' => $request->country,
             'sexe' => $request->sexe,
             'phone' => $request->phone,
+<<<<<<< HEAD
             'user_code' => 1234,
             'parrain_code' => $request->firstname.Str::random(5),
             
+=======
+            'role_id' => 2,
+            'user_code' => Str::random(40),
+            'parrain_code' => $request->parrain_code,
+>>>>>>> 0dc122429204cdc12e8953eaee4782a6e757bcd6
             'email' => $request->email,
-            'token' => Str::random(60),
             'password' => Hash::make($request->password),
         ]);
         event(new Registered($user));

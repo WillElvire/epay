@@ -9,7 +9,7 @@ class userController extends Controller
 {
    public function confirmUserAccount(string $user)
     {
-    	$data = User::firstWhere('token',$user);
+    	$data = User::firstWhere('user_code',$user);
     	if (!empty($data)) {
     		if ($data->validation != 1 && $data->verification != 1) {
     			$data->update(['validation' => 1]);

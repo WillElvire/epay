@@ -112,14 +112,33 @@ Route::middleware('auth')->prefix('administrateur')->group(function() {
     })->name('admin.home');
 
 
-     Route::get('/demande',function(){
+    Route::get('/demandes',function(){
       return view('administrator.demande');
     })->name('admin.demande');
 
+     Route::get('/demande',function(){
+      $users = User::where('status',0)->paginate(10);
+      return view('administrator.demande',compact("users"));
+    })->name('admin.demande');
 
-     Route::get('/comptabilite',function(){
+
+
+      Route::get('/confirmer/{type}/{id}',function(string $type, string $id){
+        $user = User::firstWhere('user_code',$id);
+       if ($type == 'delete') {
+          $users = User::where('user_code',$id)->delete();
+          session()->flash('success',"Vous venez de supprimer la demande de $user->firstname");
+         
+       }
+      $users = User::where('user_code',$id)->update(['status' => 1]);
+      session()->flash('success',"Vous venez d'accepter la demande de $user->firstname");
+      return back();
+    })->name('demande');
+
+
+     /*Route::get('/comptabilite',function(){
       return view('administrator.demande');
-    })->name('admin.money');
+    })->name('admin.money');*/
 
       Route::get('/user/profil{id}',function($id){
        $user = User::with('money')->firstWhere('user_code',$id);

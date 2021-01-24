@@ -30,8 +30,8 @@
 </div>
 <div class="row clearfix">                                    
 <div class="form-group col-lg-12 mb-25">
-    <input type="text" id="fname" name='user_code' value="{{old('user_code')}}" placeholder="Code parrain*" >
-@error('user_code')
+    <input type="text" id="fname" name='parrain_code' value="{{old('parrain_code')}}" placeholder="Code parrain*" >
+@error('parrain_code')
     <div class="alert alert-danger">{{ $message }}</div>
 @enderror
 
@@ -45,7 +45,7 @@
 
 </div>
 <div class="form-group col-lg-12 mb-25">
-    <input type="text" id="fname" name="lastname" value="" placeholder="Vore prénom" required>
+    <input value="{{old('lastname')}}" type="text" id="fname" name="lastname" value="" placeholder="Vore prénom" required>
  @error('lastname')
     <div class="alert alert-danger">{{ $message }}</div>
 @enderror
@@ -60,7 +60,7 @@
 </div>
 
 <div class="form-group col-lg-12 mb-25" >
-  <select name='country' class="form-control-lg col-md-12" name="country" >
+  <select required name='country' class="form-control-lg col-md-12" name="country" >
 <option value="Pays" selected="selected">Votre pays </option>
 <option value="France">France </option>
 <option value="Afghanistan">Afghanistan </option>
