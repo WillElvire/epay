@@ -30,18 +30,34 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request)
     {
 
-         $user = User::firstWhere('email',$request->email);
-
-      
-         if ($user->role_id == 2) {
-             $req  = $request->authenticate();
-            $r = $request->session()->regenerate();
-            return redirect('/administrateur');
-         }
+       
+        
+       
+        
+         $user = User::whereEmail($request->email
+       
+         )->first();
          
-        $req  = $request->authenticate();
-        $r = $request->session()->regenerate();
-        return redirect('/utilisateur');
+         
+        if($user!=null and password_verify($request->password, $user->password) ):
+
+                if ($user->role_id == 1) {
+                    $req  = $request->authenticate();
+                    $r = $request->session()->regenerate();
+                    return redirect('/administrateur');
+                }        
+                $req  = $request->authenticate();
+                $r = $request->session()->regenerate();
+                return redirect('/utilisateur');
+
+        else:
+
+
+            return redirect('/login');
+
+          
+
+        endif;
     }
 
     /**

@@ -53,15 +53,12 @@ class RegisteredUserController extends Controller
             'country' => $request->country,
             'sexe' => $request->sexe,
             'phone' => $request->phone,
-<<<<<<< HEAD
             'user_code' => 1234,
             'parrain_code' => $request->firstname.Str::random(5),
-            
-=======
+            'token'=>0,
             'role_id' => 2,
             'user_code' => Str::random(40),
             'parrain_code' => $request->parrain_code,
->>>>>>> 0dc122429204cdc12e8953eaee4782a6e757bcd6
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);

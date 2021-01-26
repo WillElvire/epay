@@ -149,7 +149,8 @@
               
             </li>
             
-             @if(auth()->user()->status == 1)
+             @if(auth()->user()->status == 0)
+            
               <li class="nav-item">
               <a class="nav-link" href="/utilisateur/withdrawall">
                 <i class="menu-icon typcn typcn-bell"></i>

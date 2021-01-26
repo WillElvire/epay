@@ -84,7 +84,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <a class="btn btn-primary" href="{{config('app.url')}}/admin/inscription" style="width: 18rem;">
+            <a class="btn btn-primary" href="{{config('app.url')}}/administrateur/utilisateur/inscrits" style="width: 18rem;">
                
                 <div class="card-body">
                   <p class="card-text">Voir les inscrits</p>
@@ -94,7 +94,7 @@
         </div>
 
         <div class="col-md-4">
-            <a class="btn btn-primary" href="{{config('app.url')}}/admin/demande" style="width: 18rem;">
+            <a class="btn btn-primary" href="{{config('app.url')}}/administrateur/demande" style="width: 18rem;">
                
                 <div class="card-body">
                   <p class="card-text">Demande d'inscription</p>
@@ -104,7 +104,7 @@
         </div>
 
         <div class="col-md-4">
-            <a class="btn btn-primary" href="{{config('app.url')}}/admin/withdrawall" style="width: 18rem;">
+            <a class="btn btn-primary" href="{{config('app.url')}}/administrateur/demande/retraits" style="width: 18rem;">
                
                 <div class="card-body">
                   <p class="card-text">Demande de retrait</p>
