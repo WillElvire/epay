@@ -8,7 +8,6 @@ use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
 class AuthenticatedSessionController extends Controller
 {
     /**
@@ -20,7 +19,6 @@ class AuthenticatedSessionController extends Controller
     {
         return view('pages.auth');
     }
-
     /**
      * Handle an incoming authentication request.
      *
@@ -30,15 +28,10 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request)
     {
 
-       
-        
-       
-        
          $user = User::whereEmail($request->email
        
          )->first();
-         
-         
+        
         if($user!=null and password_verify($request->password, $user->password) ):
 
                 if ($user->role_id == 1) {
@@ -52,10 +45,7 @@ class AuthenticatedSessionController extends Controller
 
         else:
 
-
             return redirect('/login');
-
-          
 
         endif;
     }

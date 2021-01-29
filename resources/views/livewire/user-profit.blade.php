@@ -11,31 +11,40 @@
                        </h2>
          </div>
 
+         @if(session()->has('success'))
+         <div class="alert alert-success text-center">
+            {{session()->get('success')}}
+         </div>
+          @endif
+
          <div class="card-body">
 
 
-            <div class="container">
 
-                <img src="/assets/images/fav-orange.png" class="row justify-content-center">
+            <div class="container"> 
 
-                <br>
-                <b>nom: <b class="badge badge-primary">{{auth()->user()->firstname}}</b> <br>
-                Prenom : <b class="badge badge-primary">{{auth()->user()->lastname}}</b><br>
-                Email :<b class="badge badge-primary">{{auth()->user()->email}}</b> <br>
-                Numero de télephone :<b class="badge badge-primary">(+225) {{auth()->user()->phone}}</b> <br> </b>
+              <h3>{{auth()->user()->firstname}}  {{auth()->user()->lastname}} </h3>
 
-                <br>
-                
-                <h6 class="badge badge-dark">Informations relatives à l'investissement</h6> <br>
+              <div class="card">
 
-               
-                <b>Tonneaux :  <b class="badge badge-primary">50$</b> <br>
- 
-                Validité :  <b class="badge badge-primary"> 1 Semaine </b> <br>
+                 
+                  <div class="card-body">
+                        nom: <b class="badge badge-primary">{{auth()->user()->firstname ?? ''}}</b> <br>
+                        Prenom : <b class="badge badge-primary">{{auth()->user()->lastname ?? ''}}</b><br>
+                        Email :<b class="badge badge-primary">{{auth()->user()->email ?? ''}}</b> <br>
+                        Pays :<b class="badge badge-primary">{{auth()->user()->country ?? ''}}</b> <br>
+                        date de creation du compte  : <b class="badge badge-primary">{{auth()->user()->created_at}}</b> <br>
+                        Numero de télephone :<b class="badge badge-primary">(+225) {{auth()->user()->phone}}</b> <br> 
+                        <h4 class="badge badge-dark">Informations relatives à l'investissement</h4> <br>
+                        Tonneaux :  <b class="badge badge-primary">{{$money->money_investit/540 ?? 0}} $</b> <br>
+                        Validité :  <b class="badge badge-primary"> {{$money->date_de_retour ?? 0}} </b> <br>
+                        Montant à recevoir :  <b class="badge badge-primary"> {{$money->montant_a_recevoir/500 ?? 0}} $ </b> <br>
+                        Status du compte : @if(auth()->user()->status==0) <b class="badge badge-danger"> Compte non confirmé</b>    @else  <b class="badge badge-success"> Compte  confirmé</b>  @endif <br>
+                        <label>Lien de parrainage : </label>  <input type="text" class="col-md-8 form-control" value="/register/ref={{auth()->user()->user_code ?? ''}}"/> 
+                        
 
-                <label>Lien de parrainage : </label>  <input type="text" class="col-md-8 form-control" value="/register/ref={{auth()->user()->user_code}}"/> 
-                
-                </b> 
+                  </div>
+              </div>
 
             </div>
 
@@ -49,9 +58,14 @@
                 <a class="btn btn-outline-primary btn-lg col-md-4" href="{{config('app.url')}}/utilisateur/withdrawall">Faire un rétrait</a>
 
 
-                <a class="btn btn-primary btn-lg col-md-4" href="{{config('app.url')}}/utilisateur/modify">Upgrader son pack</a>
+                <a class="btn btn-primary btn-lg col-md-4" href="{{config('app.url')}}/utilisateur/history">Voir ses historiques</a>
 
             </div>
+
+
+
+            
+
 
         
                 
@@ -102,8 +116,10 @@
 
         </b> 
          
-         
+        
+        
           
+
           <br>
           
           <button wire:click.prevent='editUserInformation()' type="submit" class="btn btn-primary mr-5 btn-lg">Modifier mes informations</button>

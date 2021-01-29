@@ -13,7 +13,9 @@ class Trasaction extends Model
     protected $fillable = [
     	'money','payment_type',
     	'user_id','pack',
-    	'retour_sur_investissement'
+        'retour_sur_investissement',
+        'date_de_reception_de_fond',
+        'motant_a_recevoir'
     ];
 
 

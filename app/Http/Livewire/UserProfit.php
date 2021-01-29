@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\User;
+use App\Models\Money;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 
@@ -11,8 +12,8 @@ class UserProfit extends Component
 
 	public $val = false;
 	public $firstname,$lastname,$email,$password,$phone,$password_confirmation;
-
-
+	public $money;
+	
 	public function showComponent()
 	{
 	    $this->val = true;
@@ -35,14 +36,11 @@ class UserProfit extends Component
         			'phone' => $this->phone,
         			'password' => Hash::make($this->password),
         		]);
-        	   session()->flash('success','Votre profit a été mit a jour');
+        	   session()->flash('success','Votre profil a été mit a jour');
         	   $this->val = false;
                return back();
         	   
            }
-
-
-
 	           User::firstWhere('id',auth()->user()->id)->update(
 	        		[
 	        			'firstname' => $this->firstname,
@@ -60,6 +58,8 @@ class UserProfit extends Component
 	}
     public function render()
     {
+		
+		$this->money=Money::whereUserId(Auth()->user()->id)->first();
         return view('livewire.user-profit');
     }
 }

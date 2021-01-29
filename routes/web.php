@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\historyController;
 use App\Models\Retrait;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -48,9 +49,9 @@ Route::get('/auth',function(){
     return view('pages/auth');   
 });
 
-Route::get('/dashboard', function () {
+/*Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard'); */
 
 require __DIR__.'/auth.php';
 
@@ -92,6 +93,9 @@ Route::middleware('auth')->prefix('utilisateur')->group(function() {
         
         return view('user/message');
     });
+
+
+    Route::get('/history',[historyController::class,'render']);
     
     Route::get('/confirmation', function() {
         
@@ -107,9 +111,7 @@ Route::middleware('auth')->prefix('administrateur')->group(function() {
     //
     
 
-    Route::get('/',function(){
-      return view('administrator.index');
-    })->name('admin.home');
+    Route::get('/',[adminController::class,'index'])->name('admin.home');
 
 
     Route::get('/demandes',function(){
@@ -120,6 +122,16 @@ Route::middleware('auth')->prefix('administrateur')->group(function() {
       $users = User::where('status',0)->paginate(10);
       return view('administrator.demande',compact("users"));
     })->name('admin.demande');
+
+    
+
+    Route::get('/demande/retraits/{id}',function($id){
+
+      $retrait=Retrait::whereId($id)->first();
+      $profil=User::whereId($retrait->user_id)->first();
+      return view('administrator.confirmation',compact('retrait'),compact('profil'));
+
+    });
 
 
 
@@ -143,6 +155,7 @@ Route::middleware('auth')->prefix('administrateur')->group(function() {
       Route::get('/user/profil{id}',function($id){
        $user = User::with('money')->firstWhere('user_code',$id);
        $filleules = User::where('parrain_code',$id)->get();
+       
       return view('administrator.profil',compact('user','filleules'));
     })->name('admin.user');
 
@@ -171,5 +184,5 @@ Route::middleware('auth')->prefix('administrateur')->group(function() {
 Route::get('user/logout',function(){
   session()->flush();
    session()->flash('success','vous etes deconnecté');
-   return view('pages.auth');
+   return redirect('/auth');
 })->name('user.logout');

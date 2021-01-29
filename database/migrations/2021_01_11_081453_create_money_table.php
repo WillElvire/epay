@@ -16,7 +16,10 @@ class CreateMoneyTable extends Migration
         Schema::create('money', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('money');
+            $table->string('money_investit');
+            $table->string('date_de_retour');
+            $table->string('montant_a_recevoir');
+            $table->string('money_actual');
             $table->foreignId('user_id')->constrained()->onDeleteCascade();
             $table->timestamps();
         });

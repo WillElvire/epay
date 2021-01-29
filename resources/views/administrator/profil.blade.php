@@ -4,8 +4,11 @@
     
 <div class="container">
 
-    <h4>Profil Koua Wilfried</h4>
+    <h4>Profil {{$user->firstname ?? ''}} {{$user->lastname ?? ''}}</h4>
     <hr>
+
+
+    
 
     <div class="row">
     
@@ -14,30 +17,33 @@
                               
                                
                                     <div class="card-header">
-                                        Information  (Nom du client)
+                                        Information  {{$user->firstname ?? ''}}
                                     </div>
+
+                                    
                                     
                                 <!-- Card Content - Collapse -->
                                 <div class="collapse show" id="collapseCardExample">
                                     <div class="card-body">
-                                     <b>  Nom : <b class="badge badge-primary">{{$user->firstname}}</b> <br>
-                                       Prenom : <b class="badge badge-primary">{{$user->lastname}}</b><br>
-                                       Email :<b class="badge badge-primary">{{$user->email}}</b> <br>
-                                       Pays :<b class="badge badge-primary">{{$user->country}}</b> <br>
-                                       Numero de telephone :<b class="badge badge-primary">{{$user->phone}}</b> <br>
+                                     <b>  Nom : <b class="badge badge-primary">{{$user->firstname ?? ''}}</b> <br>
+                                       Prenom : <b class="badge badge-primary">{{$user->lastname ?? ''}}</b><br>
+                                       Email :<b class="badge badge-primary">{{$user->email ?? ''}}</b> <br>
+                                       Pays :<b class="badge badge-primary">{{$user->country ?? ''}}</b> <br>
+                                       Numero de telephone :<b class="badge badge-primary">{{$user->phone ?? ''}}</b> <br>
                                        <hr>
-                                       Tonneaux choisi : <b class="badge badge-primary">{{$user->money[0]->pack}} $</b> <br>
-                                       Montant à recevoir : <b class="badge badge-primary">99.99 $</b> <br>
-                                       Montant récu : <b class="badge badge-primary">{{$user->money[0]->money}} $</b> <br>
+                                       Tonneaux choisi : <b class="badge badge-primary">{{$user->money[0]->pack ?? ''}} $</b> <br>
                                        
-                                       Date de validation du compte :<b class="badge badge-primary">{{$user->created_at->diffForHumans()}}</b> <br>
-                                       Personnes parrainer : <b class="badge badge-primary">8</b> <br>
+                                       Montant à recevoir : <b class="badge badge-primary">{{$user->money[0]->motant_a_recevoir/500 ?? ''}} $</b> <br>
+                                       Montant récu : <b class="badge badge-primary">{{$user->money[0]->money/500 ?? ''}} $</b> <br>
+                                       
+                                       Date de validation du compte :<b class="badge badge-primary">{{$user->created_at->diffForHumans() ?? ''}}</b> <br>
+                                       Personnes parrainer : <b class="badge badge-primary">0</b> <br>
                                        Etat du compte :<b class="badge badge-success">actif</b>
                                        <hr>
-                                       Code investisseur : <b class="badge badge-primary">{{$user->user_code}}</b> <br>
-                                       Lien parrainage : <input type="text" value="{{config('app.url')}}/register/ref={{$user->user_code}}}" class="form-control">
+                                       Code investisseur : <b class="badge badge-primary">{{$user->user_code ?? ''}}</b> <br>
+                                       Lien parrainage : <input type="text" value="{{config('app.url')}}/register/ref={{$user->user_code ?? ''}}}" class="form-control">
                                        <hr> </b>
-                                       <a class='btn btn-outline-danger' href="{{ route('admin.delete.user',$user->user_code) }}">Supprimer</a>
+                                       <a class='btn btn-outline-danger' href="{{ route('admin.delete.user',$user->user_code) ?? '' }}">Supprimer</a>
                                     </div>
                                 </div>
                             </div>

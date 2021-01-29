@@ -18,7 +18,9 @@ class CreateTrasactionsTable extends Migration
             $table->integer('pack');
             $table->integer('money');
             $table->string('payment_type');
-            $table->integer('retour_sur_investissement')->default(0);
+            $table->date('date_de_reception_de_fond');
+            $table->string('retour_sur_investissement')->default(0);
+            $table->string('motant_a_recevoir');
             $table->foreignId('user_id')->constrained()->onDeleteCascade();
             $table->timestamps();
         });

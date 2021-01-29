@@ -141,7 +141,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="transaction" aria-expanded="false" aria-controls="ui-basic">
+              <a class="nav-link"  href="/utilisateur/transaction" aria-expanded="false" aria-controls="ui-basic">
                 <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">Transaction</span>
               
@@ -149,7 +149,7 @@
               
             </li>
             
-             @if(auth()->user()->status == 0)
+             @if(auth()->user()->status == 1)
             
               <li class="nav-item">
               <a class="nav-link" href="/utilisateur/withdrawall">
@@ -169,18 +169,11 @@
 
            
 
-              <li class="nav-item">
-                <a class="nav-link"  href="/utilisateur/inbox" aria-expanded="false" aria-controls="auth">
-                  <i class="menu-icon typcn typcn-document-add"></i>
-                  <span class="menu-title">Message</span>
-                  
-                </a>
-                
-              </li>
+              
 
               @endif
               <li class="nav-item">
-                <a class="nav-link"  href="/utilisateur/profil" aria-expanded="false" aria-controls="auth">
+                <a class="nav-link"  href="/" aria-expanded="false" aria-controls="auth">
                   <i class="menu-icon typcn typcn-document-add"></i>
                   <span class="menu-title">Voir le site</span>
                   

@@ -60,10 +60,22 @@
                                  
                              </li>
 
-                             <li class="menu-item-has-children">
-                                 <a href="/auth">Back office</a>
-                                 
-                             </li>
+
+                             @if(isset(Auth()->user()->id)):
+
+                                <li class="menu-item-has-children">
+                                    <a href="/utilisateur">Back office</a>
+                                    
+                                </li>
+                             @else
+
+                                    <li class="menu-item-has-children">
+                                        <a href="/auth">Back office</a>
+                                        
+                                    </li>
+
+
+                             @endif;
 
                              <li class="menu-item-has-children">
                                  <a href="/register">Inscription</a>

@@ -1,10 +1,53 @@
+<style>
+    .card {
+        border-radius: 50px;  
+    }
+    .card .card-body h2{
+        color:red;
+        font-weight: bold;
+        font-size: 38px;
+    }
+    .card p{
+        color:black;
+        font-size: 20px;
+    }
+    .card .jours{
+        font-size: 100px;
+        font-weight: bold;
+        color:red;
+    }
+    .error p{
+        color:red;  
+        font-size: 30px;
+    }
+    .form-control{
+      height:50px;
+      border-radius: 50px;
+    }
+    .btn {
+      border-radius: 50px;
+    }
+    .alert-success{
+      border-radius: 50px;
+    }
+  </style>
 <div>
+
+    
         <div class="container">
         	   @if(session()->has('success'))
 		           <div class="alert alert-success text-center">
 		              {{session()->get('success')}}
 		           </div>
-		           @endif
+                @endif
+                
+                @if(session()->has('danger'))
+		           <div class="alert alert-danger text-center">
+		              {{session()->get('danger')}}  <b class="badge badge-danger"> Solde : {{$money_information->montant_a_recevoir/500}} $ </b>
+		           </div>
+                @endif
+                
+                
 
                 <form method="post">
 

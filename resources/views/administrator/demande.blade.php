@@ -29,12 +29,12 @@
                     @foreach($users as $user)
                     <tr>
                         <td>{{$user->user_code}}</td>
-                        <td><a href="{{config('app.url')}}/admin/profil/5">{{$user->fisrtname}}</a></td>
+                        <td><a href="{{config('app.url')}}/administrateur/user/profil{{$user->user_code}}">{{$user->firstname}}</a></td>
                         <td>{{$user->lastname}}</td>
                         <td>{{$user->email}}</td>
                       
                         <td>{{$user->created_at->diffForHumans()}}</td>
-                        <td>
+                        <td> 
                             <div class="btn btn-group">
                                 <a href="{{ route('demande',['type' => 'allow','id' => $user->user_code]) }}" class="btn btn-success">
                                     confirmer

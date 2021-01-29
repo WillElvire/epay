@@ -44,7 +44,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item ">
-                <a class="nav-link" href="/home">
+                <a class="nav-link" href="/administrateur">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -69,10 +69,7 @@
                     <span>Les demandes</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#"                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>La comptabilité</span></a>
-            </li>
+           
 
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('admin.retrait') }}">

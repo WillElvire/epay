@@ -18,7 +18,10 @@
                        
                       
                         <th>Montant</th>
+                        
+                        <th>Numéro du receveur</th>
                         <th>Option</th>
+                        <th>Date de demande</th>
                     </tr>
                 </thead>
                 
@@ -26,13 +29,16 @@
 
                   @foreach($retraits as $retrait)
                     <tr>
+                       
                         <td>{{$retrait->user->user_code}}</td>
-                        <td><a href="/admin/profil/5">{{$retrait->user->firstname}} {{$retrait->user->lastname}}</a></td>
-                        <td>{{$retrait->money}} $</td>
+                        <td>{{$retrait->user->firstname}} {{$retrait->user->lastname}}</td>
+                        <td>{{$retrait->money*500}} F CFA</td>
+                        <td>{{$retrait->number_of_payment}}</td>
+                        <td>{{$retrait->created_at->diffForHumans()}}</td>
+
                         <td>
                             <div class="btn btn-group">
-                                <a class="btn btn-success"  data-toggle="modal" data-target="#exampleModal">
-                                    +
+                                <a class="btn btn-success"  href="/administrateur/demande/retraits/{{$retrait->id}}">voir +
                                  </a>
                                 <a class="btn btn-danger">
                                    x
@@ -65,32 +71,5 @@
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Information  du rétrait</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <p>Nom : <b class="badge badge-primary">Koua</b></p>
-          <p>Prenom : <b class="badge badge-primary">Prenom</b></p>
-          <p>Opérateur choisi : <b class="badge badge-primary">Orange </b> </p>
-          <p>Numéro sur lequel effectué la transaction : <b class="badge badge-primary">+22685985112</b></p>
-          <p>Date de demande : <b class="badge badge-primary">25/04/12</b></p>
-          <p>Montant à recevoir :  <b class="badge badge-primary">50000 francs cfa</b></p>
-          <p>Pay du receveur : <b class="badge badge-primary">Burkina fasso</b></p>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Supprimer la demande</button>
-        <button type="button" class="btn btn-success">Confirmer la demande</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 @endsection

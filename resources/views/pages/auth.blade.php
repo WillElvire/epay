@@ -25,7 +25,7 @@
 
                         
 
-                        <input type="<i class='ri-lock-password-fill'></i>" name="password" placeholder="Votre mot de passe" required="">
+                        <input type="password" name="password" placeholder="Votre mot de passe" required="">
 
                         <button type="submit" class="readon submit-btn">Se connecter</button>
                         <div class="last-password">

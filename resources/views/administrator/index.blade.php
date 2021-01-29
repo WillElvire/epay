@@ -19,7 +19,7 @@
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                            Nombres d'inscrits</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">40</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{$inscrit->count()}}</div>
                     </div>
                    
                 </div>
@@ -35,7 +35,7 @@
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                             Demande d'inscription</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{$demande->count()}}</div>
                     </div>
                     
                 </div>
@@ -72,7 +72,7 @@
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                             Révenu nette</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">1800000$</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{$revenu}} Fcfa</div>
                     </div>
                     
                 </div>

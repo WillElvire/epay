@@ -29,7 +29,7 @@
 
                     @foreach($users as $user)
                     <tr>
-                        <td>X50020</td>
+                        <td>{{$user->user_code}}</td>
                         <td>{{$user->firstname}}</td>
                         <td>{{$user->lastname}}</td>
                         <td>{{$user->email}}</td>
